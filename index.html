@@ -539,7 +539,7 @@
 
   // upbeat dance remix of "Happy Birthday" (public-domain melody, synthesized with Web Audio — no file needed)
   const VOLUME = 0.07;
-  const BPM = 140, SPB = 60 / BPM;            // seconds per beat
+  const BPM = 165, SPB = 60 / BPM;            // seconds per beat
   const NOTE_IDX = {C:0,D:2,E:4,F:5,G:7,A:9,B:11};
   const hz = n => { const m = 12*(+n.slice(-1)+1) + NOTE_IDX[n[0]] + (n[1]==='#'?1:0); return 440*Math.pow(2,(m-69)/12); };
   // melody: [note or null, beats to advance, optional sounding length]; 8 bars of 4/4
